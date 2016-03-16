@@ -4,6 +4,7 @@ public class TaxCalculator {
 	public static void main(String[] args) {
 
 		int status;
+		DecimalFormat moneyFormat = new DecimalFormat("$#,##0.00");
 
 		Scanner input = new Scanner(System.in);
 
@@ -25,7 +26,7 @@ public class TaxCalculator {
 
 			TaxReturn taxReturn = new TaxReturn(income, status);
 
-			System.out.println("Tax: " + taxReturn.getTax());
+			System.out.println("Tax: " + moneyFormat.format(taxReturn.getTax()));
 		}
 
 	}
