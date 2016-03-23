@@ -15,21 +15,21 @@ public class QuadraticEquation {
 	
 	public double getSolution1() {
 		
-		solution1 = ((-1 * testB) + (Math.sqrt(testB) - (4* testA * testC))) / (2 * testA);
+		solution1 = ((-1 * testB) + (Math.sqrt((testB * testB) - (4* testA * testC)))) / (2 * testA);
 		return solution1;
 		
 	}
 	
 	public double getSolution2() {
 		
-		solution2 = ((-1 * testB) - (Math.sqrt(testB)- (4* testA * testC))) / (2 * testA);
+		solution2 = ((-1 * testB) - (Math.sqrt((testB * testB)- (4* testA * testC)))) / (2 * testA);
 		return solution2;
 		
 	}
 	
 	public boolean hasSolution() {
 		
-		if(Math.sqrt(testB) - (4 * testA * testC) < 0 ) {
+		if(Math.sqrt((testB * testB) - (4 * testA * testC)) < 0 ) {
 			return false;
 		}
 		else
