@@ -28,9 +28,10 @@ public class SolveQuadratics {
 		
 		
 		
-		} else if(!test.hasSolution())
+		} else
 			System.out.println("There are no real solutions given your input.");
-			
-	input.close();
+		
+		
+	input.close();	
 	}
 }
