@@ -30,5 +30,7 @@ public class SolveQuadratics {
 		
 		} else if(!test.hasSolution())
 			System.out.println("There are no real solutions given your input.");
+			
+	input.close();
 	}
 }
